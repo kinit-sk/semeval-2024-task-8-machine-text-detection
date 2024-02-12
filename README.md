@@ -34,11 +34,15 @@ If you use the data, code, or the information in this repository, cite the follo
    conda env create -f environment.yaml
    conda activate IMGTB
    ```
-2. Clone the official [SemEval-2024 Task 8 repository](https://github.com/mbzuai-nlp/SemEval2024-task8), copy the official data to the data folder as described in the official repository.
+2a. For the integration and usage with the official scoring scipts, clone the official [SemEval-2024 Task 8](https://github.com/mbzuai-nlp/SemEval2024-task8) repository, copy the official data to the data folder as described in the official repository, and copy the content of this repository to the subtaskA folder
    ```
    git clone https://github.com/mbzuai-nlp/SemEval2024-task8.git
    cd SemEval2024-task8
    ```
-3. Copy the content of this repository to the subtaskA folder.
-
+3b. Or just clone this repository and use it independently.
+   ```
+   git clone https://github.com/kinit-sk/semeval-2024-task-8-machine-text-detection.git
+   cd semeval-2024-task-8-machine-text-detection
+   ```
+   
 
