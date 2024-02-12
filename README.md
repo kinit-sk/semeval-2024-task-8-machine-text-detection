@@ -34,7 +34,7 @@ If you use the data, code, or the information in this repository, cite the follo
    conda env create -f environment.yaml
    conda activate IMGTB
    ```
-2. For the integration and usage with the official scoring scipts, clone the official [SemEval-2024 Task 8](https://github.com/mbzuai-nlp/SemEval2024-task8) repository, copy the official data to the data folder as described in the official repository, and copy the content of this repository to the subtaskA folder
+2. For the integration and usage with the official scoring scipts, clone the official [SemEval-2024 Task 8](https://github.com/mbzuai-nlp/SemEval2024-task8) repository, copy the official data to the data folder as described in the official repository, and copy the content of this repository to the subtaskA folder.
    ```
    git clone https://github.com/mbzuai-nlp/SemEval2024-task8.git
    cd SemEval2024-task8
@@ -44,5 +44,10 @@ If you use the data, code, or the information in this repository, cite the follo
    git clone https://github.com/kinit-sk/semeval-2024-task-8-machine-text-detection.git
    cd semeval-2024-task-8-machine-text-detection
    ```
-   
-
+## Code Usage
+1. To retrain the Mistral-7B model, run the following code (data needs to be downloaded as described in Step 2 of the Installation). Similarly, run the code to retrain Falcon-7B.
+   ```
+   python3 baseline/transformer_peft.py --train_file_path data/subtaskA_train_multilingual.jsonl --test_file_path data/subtaskA_test_multilingual.jsonl --prediction_file_path predictions/mistral_test_predictions_probs.jsonl --subtask A --model 'mistralai/Mistral-7B-v0.1'
+   ```
+2. To regenerate statistical metrics, use the [IMGTB framework](https://github.com/michalspiegel/IMGTB).
+3. For LLM2S3 ensembling, use the provided Jupyter notebook [script](https://github.com/kinit-sk/semeval-2024-task-8-machine-text-detection/blob/main/LLM2S3.ipynb).
