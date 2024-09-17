@@ -4,17 +4,17 @@ Source code for replication of the detection system, ranked fourth at SemEval-20
 ## Cite
 If you use the data, code, or the information in this repository, cite the following paper.
 ```bibtex
-@inproceedings{KInITSemeval2024task8,
-    title={{KInIT} at {SemEval}-2024 Task 8: Fine-tuned {LLMs} for Multilingual Machine-Generated Text Detection},
-    author={Michal Spiegel and Dominik Macko},
-    booktitle = {Proceedings of the 18th International Workshop on Semantic Evaluation},
-    series = {SemEval 2024},
-    year = {2024},
-    address = {Mexico, address = {Mexico City, Mexico},
-    month = {June},
-    pages = {},    
-    doi= {},
-    misc = {https://github.com/kinit-sk/semeval-2024-task-8-machine-text-detection}           
+@inproceedings{spiegel-macko-2024-kinit,
+    title = "{KI}n{IT} at {S}em{E}val-2024 Task 8: Fine-tuned {LLM}s for Multilingual Machine-Generated Text Detection",
+    author = "Spiegel, Michal  and Macko, Dominik",
+    booktitle = "Proceedings of the 18th International Workshop on Semantic Evaluation (SemEval-2024)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.semeval-1.84",
+    doi = "10.18653/v1/2024.semeval-1.84",
+    pages = "558--564",
 }
 ```
 
